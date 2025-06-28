@@ -63,3 +63,7 @@ with open('demo_2.txt','w') as f:
 with open('demo_2.txt','w') as f:
     f.write('python')
 # if the file exists and already have something in it will overwrite the file to avoid this, open the file in appended mode i.e., 'a'
+
+for d,r,f in os.walk('C:/Users/Vikas Dubey/Desktop/Python_basic'):
+    for file in f:
+        file.rename('txt','jpg')

@@ -94,3 +94,5 @@ destination_directory = 'path/to/destination/'
 
 # Move the file
 os.rename(source_file, destination_directory + os.path.basename(source_file))
+
+'''always use os.path.join() to add paths or to define paths'''

@@ -41,6 +41,7 @@ conn.commit()
 #we don't have to do c.commit for running SELECT query, but this will not print the result for getting the result we have to use c.fetchall(),c.fetchone() etc.
 c.execute("SELECT * FROM students")
 print(c.fetchall())
+print(c.fetchone())
 
 #The `conn.close()` method is used to terminate the connection to an SQLite database properly. This method is crucial for proper database management and resource handling.
 conn.close()
