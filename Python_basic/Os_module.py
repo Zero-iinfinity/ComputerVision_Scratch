@@ -64,14 +64,14 @@ print(os.path.splitext(r'/tmp/test.txt'))
 #to append a whole list use .extent
 
 '''spliting filename and extension'''
-# import os
-# array = ['ABCD.txt', 'XYZ.txt']
-# new_array = [os.path.splitext(name)[0] for name in array] # This [0] is for getting 1 item of a list for the example it is ABCD,XYZ
-# #if you use [1] it output .txt,.txt
-# print(new_array)
+import os
+array = ['ABCD.txt', 'XYZ.txt']
+new_array = [os.path.splitext(name)[0] for name in array] # This [0] is for getting 1 item of a list for the example it is ABCD,XYZ
+#if you use [1] it output .txt,.txt
+print(new_array)
 
 '''to remove file'''
-# os.remove('test.txt')
+os.remove('test.txt')
 
 '''difference btw exists and isfile'''
 # 1. `os.path.exists()`:
@@ -86,11 +86,11 @@ print(os.path.splitext(r'/tmp/test.txt'))
 #     - Use when you specifically need to confirm something is a file
 
 '''moving file from one directory to another directory'''
-# import os
-#
-# # Define the source file path and the destination directory path
-# source_file = 'path/to/source/file.txt'
-# destination_directory = 'path/to/destination/'
-#
-# # Move the file
-# os.rename(source_file, destination_directory + os.path.basename(source_file))
+import os
+
+# Define the source file path and the destination directory path
+source_file = 'path/to/source/file.txt'
+destination_directory = 'path/to/destination/'
+
+# Move the file
+os.rename(source_file, destination_directory + os.path.basename(source_file))
